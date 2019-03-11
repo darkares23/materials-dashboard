@@ -6,6 +6,7 @@ import imagine1 from "assets/img/sidebar-1.jpg";
 import imagine2 from "assets/img/sidebar-2.jpg";
 import imagine3 from "assets/img/sidebar-3.jpg";
 import imagine4 from "assets/img/sidebar-4.jpg";
+import imagine5 from "assets/img/sidebar-5.jpg";
 
 import Button from "components/CustomButtons/Button.jsx";
 
@@ -139,6 +140,17 @@ class FixedPlugin extends Component {
                 }}
               >
                 <img src={imagine4} alt="..." />
+              </a>
+            </li>
+            <li className={this.state["bgImage"] === imagine5 ? "active" : ""}>
+              <a
+                className="img-holder switch-trigger"
+                onClick={() => {
+                  this.setState({ bgImage: imagine5 });
+                  this.props.handleImageClick(imagine5);
+                }}
+              >
+                <img src={imagine5} alt="..." />
               </a>
             </li>
 
