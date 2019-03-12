@@ -124,6 +124,7 @@ class Dashboard extends React.Component {
             bgImage={this.state["image"]}
             handleFixedClick={this.handleFixedClick}
             fixedClasses={this.state.fixedClasses}
+
           />
         </div>
       </div>

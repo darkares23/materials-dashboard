@@ -9,6 +9,7 @@ import Unarchive from "@material-ui/icons/Unarchive";
 import Language from "@material-ui/icons/Language";
 // core components/views for Admin layout
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
+import TodoForms from "views/TodoForms/TodoForms.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
 import TableList from "views/TableList/TableList.jsx";
 import Typography from "views/Typography/Typography.jsx";
@@ -26,6 +27,14 @@ const dashboardRoutes = [
     rtlName: "لوحة القيادة",
     icon: Dashboard,
     component: DashboardPage,
+    layout: "/admin"
+  },
+  {
+    path: "/TodoForms",
+    name: "Task",
+    rtlName: "لوحة القيادة",
+    icon: "done",
+    component:TodoForms,
     layout: "/admin"
   },
   {
